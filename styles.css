@@ -1,3 +1,5 @@
+
+
 *{
   font-family: 'Manrope', sans-serif;
 }
@@ -6,8 +8,30 @@ body{
   padding-top: 7rem;
   background-image: url(images/pattern-circles.svg), url(images/bg-pattern.svg);
   background-repeat: no-repeat, no-repeat;
-  background-position: center, center;
-  background-size: 125px, cover;
+  background-position: 50% 15%, 0 -7rem;
+  background-size: 140px, contain;
+  display: grid;
+  place-items: center;
 
 }
+header{
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
 
+h3{
+  font-weight: 800 !important;
+  font-size: 28px !important;
+  color: hsl(227, 35%, 25%);
+}
+
+h4{
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  color: hsl(225, 20%, 60%);
+}
+.card-body{
+  margin: auto;
+
+}

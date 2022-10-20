@@ -29,18 +29,26 @@
     <section class="pricing_card">
       <div class="card">
         <div class="card-body">
-          <p></p>
-          Pageviews
-          $ /month
-  
-          Monthly Billing
-          Yearly Billing 25% discount
-  
-          Unlimited websites
-          100% data ownership
-          Email reports
-  
-          Start my trial
+          <p> <span></span> Pageviews</p>
+          <label for="temp"><span></span> /month</label>
+          <input type="range" id="price" name="price" list="price" />
+          <datalist id="price">
+            <option value="10K" label="$8"></option>
+            <option value="50K" label="$12"></option>
+            <option value="100K" label="$16"></option>
+            <option value="500K" label="$24"></option>
+            <option value="1M" label="$36"></option>
+          </datalist>
+          <p>Monthly Billing</p>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Yearly Billing<span> 25% discount</span></label>
+          </div>
+
+          <p>Unlimited websites</p>
+          <p>100% data ownership</p>
+          <p>Email reports</p>
+          <button>Start my trial</button>
         </div>
       </div>
     </section>
