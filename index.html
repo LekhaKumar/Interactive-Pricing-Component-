@@ -31,14 +31,14 @@
         <div class="card-body">
           <p> <span></span> Pageviews</p>
           <div class="slidecontainer">
-          <label for="price"><span></span> /month</label>
+          <label for="price"><span class="priceValue"></span class="plan"><span></span></label>
           <input type="range" id="price" name="price" list="price" class="slider" />
           <datalist id="price">
-            <option value="10K" label="$8"></option>
-            <option value="50K" label="$12"></option>
-            <option value="100K" label="$16"></option>
-            <option value="500K" label="$24"></option>
-            <option value="1M" label="$36"></option>
+            <option value="10" label="$8"></option>
+            <option value="50" label="$12"></option>
+            <option value="100" label="$16"></option>
+            <option value="500" label="$24"></option>
+            <option value="1000" label="$36"></option>
           </datalist>
           </div>
           <div class="planDuration">
@@ -46,7 +46,7 @@
           <div class="d-flex my-switch">
             <div class="form-text text-1">Monthly Billing</div>
             <div class="form-check form-switch form-check-inline">
-              <input type="checkbox" class="form-check-input form-check-inline" id="pricing">
+              <input type="checkbox" class="form-check-input form-check-inline" id="pricing" checked>
             </div>
             <div class="form-text text-2">Yearly Billing</div>
             
