@@ -29,17 +29,16 @@
     <section class="pricing_card">
       <div class="card">
         <div class="card-body">
-          <p> <span></span> Pageviews</p>
+          <div class="page-view"><span>100k</span> page-views
+          </div>
+          <div class="fixPrice">
+            <span>$ <span class="priceFix1">16</span>.00</span>
+            <span class="month">/month</span>
+          </div>
+          
           <div class="slidecontainer">
           <label for="price"><span class="priceValue"></span class="plan"><span></span></label>
-          <input type="range" id="price" name="price" list="price" class="slider" />
-          <datalist id="price">
-            <option value="10" label="$8"></option>
-            <option value="50" label="$12"></option>
-            <option value="100" label="$16"></option>
-            <option value="500" label="$24"></option>
-            <option value="1000" label="$36"></option>
-          </datalist>
+          <input type="range" min="1" max="5" value="3" step="1" class="myRange">
           </div>
           <div class="planDuration">
           <label for="pricing" class="hideText">Pricing</label>
@@ -49,17 +48,10 @@
               <input type="checkbox" class="form-check-input form-check-inline" id="pricing" checked>
             </div>
             <div class="form-text text-2">Yearly Billing</div>
+            <span class="discount">25% discount</span>
             
           </div>
           </div>
-
-        
-
-
-
-          
-
-
           <p>Unlimited websites</p>
           <p>100% data ownership</p>
           <p>Email reports</p>
