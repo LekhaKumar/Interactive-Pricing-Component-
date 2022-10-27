@@ -30,8 +30,9 @@
       <div class="card">
         <div class="card-body">
           <p> <span></span> Pageviews</p>
-          <label for="temp"><span></span> /month</label>
-          <input type="range" id="price" name="price" list="price" />
+          <div class="slidecontainer">
+          <label for="price"><span></span> /month</label>
+          <input type="range" id="price" name="price" list="price" class="slider" />
           <datalist id="price">
             <option value="10K" label="$8"></option>
             <option value="50K" label="$12"></option>
@@ -39,11 +40,25 @@
             <option value="500K" label="$24"></option>
             <option value="1M" label="$36"></option>
           </datalist>
-          <p>Monthly Billing</p>
-          <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-            <label class="form-check-label" for="flexSwitchCheckDefault">Yearly Billing<span> 25% discount</span></label>
           </div>
+          <div class="planDuration">
+          <label for="pricing" class="hideText">Pricing</label>
+          <div class="d-flex my-switch">
+            <div class="form-text text-1">Monthly Billing</div>
+            <div class="form-check form-switch form-check-inline">
+              <input type="checkbox" class="form-check-input form-check-inline" id="pricing">
+            </div>
+            <div class="form-text text-2">Yearly Billing</div>
+            
+          </div>
+          </div>
+
+        
+
+
+
+          
+
 
           <p>Unlimited websites</p>
           <p>100% data ownership</p>
