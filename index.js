@@ -6,73 +6,69 @@ let duration = document.getElementById("duration");
 let checkBox = document.querySelector(".form-switch #planType");
 
 
-
+//callback function for the toggle button
 checkBox.oninput = function () {
 
-  if (checkBox.checked == true){
-    if (slider.value == 1){
+  if (checkBox.checked == true) {
+    if (slider.value == 1) {
       price_value.innerHTML = "72";
       duration.innerHTML = "/year";
-    }else if (slider.value == 2){
+    } else if (slider.value == 2) {
       price_value.innerHTML = "108";
       duration.innerHTML = "/year";
-    }else if (slider.value == 3){
+    } else if (slider.value == 3) {
       price_value.innerHTML = "144";
       duration.innerHTML = "/year";
-    }else if (slider.value == 4){
+    } else if (slider.value == 4) {
       price_value.innerHTML = "216";
       duration.innerHTML = "/year";
-    }else{
+    } else {
       price_value.innerHTML = "324";
       duration.innerHTML = "/year";
     }
 
 
-}else{
-  if (slider.value == 1){
-    price_value.innerHTML = "8";
-    duration.innerHTML = "/month";
-  }else if (slider.value == 2){
-    price_value.innerHTML = "12";
-    duration.innerHTML = "/month";
-  }else if (slider.value == 3){
-    price_value.innerHTML = "16";
-    duration.innerHTML = "/month";
-  }else if (slider.value == 4){
-    price_value.innerHTML = "24";
-    duration.innerHTML = "/month";
-  }else{
-    price_value.innerHTML = "36";
-    duration.innerHTML = "/month";
+  } else {
+    if (slider.value == 1) {
+      price_value.innerHTML = "8";
+      duration.innerHTML = "/month";
+    } else if (slider.value == 2) {
+      price_value.innerHTML = "12";
+      duration.innerHTML = "/month";
+    } else if (slider.value == 3) {
+      price_value.innerHTML = "16";
+      duration.innerHTML = "/month";
+    } else if (slider.value == 4) {
+      price_value.innerHTML = "24";
+      duration.innerHTML = "/month";
+    } else {
+      price_value.innerHTML = "36";
+      duration.innerHTML = "/month";
+    }
+
   }
-  
-}
 }
 
+//call the sliderMain function for refresh purpose
 sliderMain();
 
+//function for the slider button
 function sliderMain() {
 
   slider.oninput = function () {
     if (slider.value == 1) {
       if (checkBox.checked == true) {
         price_value.innerHTML = "72";
-
-
       } else {
         price_value.innerHTML = "8";
-
       }
       pageCount.innerHTML = "10K"
     }
     if (slider.value == 2) {
       if (checkBox.checked == true) {
         price_value.innerHTML = "108";
-
-
       } else {
         price_value.innerHTML = "12";
-
       }
 
       pageCount.innerHTML = "50K"
@@ -80,38 +76,25 @@ function sliderMain() {
     if (slider.value == 3) {
       if (checkBox.checked == true) {
         price_value.innerHTML = "144";
-
-
       } else {
         price_value.innerHTML = "16";
-
       }
-
       pageCount.innerHTML = "100K"
     }
     if (slider.value == 4) {
       if (checkBox.checked == true) {
         price_value.innerHTML = "216";
-
-
       } else {
         price_value.innerHTML = "24";
-
       }
-
       pageCount.innerHTML = "500K"
     }
     if (slider.value == 5) {
       if (checkBox.checked == true) {
         price_value.innerHTML = "324";
-
-
-
       } else {
         price_value.innerHTML = "36";
-
       }
-
       pageCount.innerHTML = "1M"
     }
   }
