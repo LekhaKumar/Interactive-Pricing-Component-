@@ -12,7 +12,7 @@ body {
   background-image: url(images/pattern-circles.svg), url(images/bg-pattern.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: 50% 15%, 0 -7rem;
-  background-size: 140px, contain;
+  background-size: 140px, 1500px;
   display: grid;
   place-items: center;
 
@@ -229,4 +229,27 @@ button {
 button:hover {
   color: white;
   
+}
+
+@media(max-width: 376px){
+  body {
+    padding-top: 4rem;
+    background-image: url(images/pattern-circles.svg), url(images/bg-pattern.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50% 7%, 0 -2rem;
+    background-size: 130px, 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    flex-direction: column;
+  
+  }
+
+  h3{
+    text-align: center;
+  }
+  
+
+
+
 }
