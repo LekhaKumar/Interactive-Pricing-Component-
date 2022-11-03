@@ -13,7 +13,7 @@ body {
   background-image: url(images/pattern-circles.svg), url(images/bg-pattern.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: 50% 15%, 0 -7rem;
-  background-size: 140px, 1500px;
+  background-size: 140px, 1550px;
   display: grid;
   place-items: center;
 
