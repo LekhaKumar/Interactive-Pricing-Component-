@@ -5,6 +5,7 @@
 header,
 .card {
   width: 30rem;
+  min-width: 30rem;
 }
 
 body {
@@ -189,6 +190,10 @@ input[type="checkbox"]:checked {
 
 }
 
+.minus{
+  display: hidden;
+}
+
 hr {
   width: 30rem;
   position: relative;
@@ -229,5 +234,108 @@ button {
 button:hover {
   color: white;
   
+}
+
+@media(max-width: 415px){
+  body {
+    padding-top: 3rem;
+    background-image: url(images/pattern-circles.svg), url(images/bg-pattern.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 80% 5%, 0 -2rem;
+    background-size: 200px, 1500px;
+  
+  }
+
+  h4{
+    width: 200px;
+    margin: auto;
+    line-height: 1.7 !important;
+  }
+
+  .card{
+    width: 29rem;
+    margin: 0rem 1rem 2rem 0.5rem;
+    padding-bottom: 2rem !important;
+  }
+
+  .page-views{
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 2rem;
+  }
+
+  .slidecontainer{
+    position: relative;
+    bottom: 9rem;
+
+  }
+
+  .fixPrice{
+    margin-top: 5rem;
+    margin-left: 100px;
+  
+  }
+
+  h3{
+    font-size: 40px !important;
+  }
+
+  .planDuration{
+    position: relative;
+    bottom: 4rem;
+  }
+
+  .my-switch{
+    padding-left: 15px;
+  }
+
+  .text-1, .text-2{
+    width: 130px;
+    font-size: 15px !important;
+  }
+
+  input[type="checkbox"] {
+    height: 1.5rem !important;
+    width: 3rem !important;
+  }
+
+  .hide-word{
+    display: none;
+  }
+
+  .discount{
+    margin-left: -2rem;
+    font-size: 14px !important;
+    border-radius: 15px;
+    padding: 0.1rem 0.7rem;
+
+  }
+
+  hr{
+    position: relative;
+    bottom: 3rem;
+    width: 29rem;
+
+  }
+  
+  ul{
+    display: block;
+    text-align: center;
+    margin-top: -2rem !important;
+    line-height: 2.0;
+
+  }
+
+  .offers{
+    font-size: 18px !important;
+  }
+ 
+  button{
+   position: relative;
+   top: 0.5rem;
+   left: 6rem;
+  }
+
 }
 
