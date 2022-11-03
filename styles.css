@@ -1,10 +1,13 @@
-
-
-*{
+* {
   font-family: 'Manrope', sans-serif;
 }
 
-body{
+header,
+.card {
+  width: 30rem;
+}
+
+body {
   padding-top: 7rem;
   background-image: url(images/pattern-circles.svg), url(images/bg-pattern.svg);
   background-repeat: no-repeat, no-repeat;
@@ -14,34 +17,43 @@ body{
   place-items: center;
 
 }
-header{
+
+header {
   padding-top: 1rem;
   padding-bottom: 2rem;
   text-align: center;
 }
 
-h3{
+h3 {
   font-weight: 800 !important;
   font-size: 28px !important;
   color: hsl(227, 35%, 25%);
 }
 
-h4{
+h4 {
   font-weight: 600 !important;
   font-size: 15px !important;
   color: hsl(225, 20%, 60%);
 }
-.card{
+
+.card {
   padding: 1rem 2rem;
-}
-.card-body{
-  margin: auto;
-}
-.page-views, .fixPrice, h3{
-  display:inline-block;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px !important;
 }
 
-.page-views{
+.card-body {
+  margin: auto;
+  width: 26rem;
+}
+
+.page-views,
+.fixPrice,
+h3 {
+  display: inline-block;
+}
+
+.page-views {
   font-size: 12px;
   color: hsl(225, 20%, 60%);
   font-weight: 800;
@@ -49,83 +61,172 @@ h4{
 
 }
 
-.fixPrice{
-  margin-left: 5rem;
+.fixPrice {
+  margin-left: 6rem;
 
 }
 
-#duration{
+#duration {
   vertical-align: super;
   font-size: 15px;
   color: hsl(225, 20%, 60%);
 }
 
+
+
 .slidecontainer {
-  width: 100%; /* Width of the outside container */
+  width: 100%;
+  /* Width of the outside container */
 }
 
 /* The slider itself */
 .slider {
-  -webkit-appearance: none;  /* Override default CSS styles */
+  -webkit-appearance: none;
+  /* Override default CSS styles */
   border-radius: 10px;
   appearance: none;
-  width: 100%; /* Full-width */
-  height: 9px; /* Specified height */
-  background: hsl(174, 77%, 80%); /* Grey background */
-  outline: none; /* Remove outline */
-  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  width: 100%;
+  /* Full-width */
+  height: 10px;
+  /* Specified height */
+  background: hsl(174, 77%, 80%);
+  /* Light green background */
+  outline: none;
+  /* Remove outline */
+  opacity: 0.7;
+  /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s;
+  /* 0.2 seconds transition on hover */
   transition: opacity .2s;
 }
 
 /* Mouse-over effects */
 .slider:hover {
-  opacity: 1; /* Fully shown on mouse-over */
-  
+  opacity: 1;
+  /* Fully shown on mouse-over */
+
 }
 
 /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
 .slider::-webkit-slider-thumb {
-  -webkit-appearance: none; /* Override default look */
+  -webkit-appearance: none;
+  /* Override default look */
   appearance: none;
-  width: 30px; /* Set a specific slider handle width */
-  height: 30px; /* Slider handle height */
+  width: 30px;
+  /* Set a specific slider handle width */
+  height: 30px;
+  /* Slider handle height */
   border-radius: 50%;
   background-color: hsl(174, 86%, 45%);
-  background-image: url('images/icon-slider.svg'); 
+  background-image: url('images/icon-slider.svg');
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: center;
-  cursor: pointer; /* Cursor on hover */
+  cursor: pointer;
+  /* Cursor on hover */
 }
 
 .slider::-moz-range-thumb {
-  width: 25px; /* Set a specific slider handle width */
-  height: 25px; /* Slider handle height */
+  width: 25px;
+  /* Set a specific slider handle width */
+  height: 25px;
+  /* Slider handle height */
   border-radius: 50%;
   background-color: hsl(174, 86%, 45%);
-  background-image: url('images/icon-slider.svg'); 
+  background-image: url('images/icon-slider.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  cursor: pointer; /* Cursor on hover */
+  cursor: pointer;
+  /* Cursor on hover */
 }
 
-.slider::-webkit-slider-thumb:hover{
+.slider::-webkit-slider-thumb:hover {
   background-color: hsl(174, 77%, 80%);
 }
-/* The switch - the box around the slider */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+
+#myRange {
+  margin-bottom: 2rem;
+
 }
 
-.hideText{
-  display:none;
+/* The switch - the box around the slider */
+.my-switch {
+  padding: 0.5rem 0 0.5rem 3.6rem;
+}
+
+.hideText {
+  display: none;
 }
 
 .my-switch .form-switch {
   margin: 3px 0px 0 15px;
+
+}
+
+input[type="checkbox"] {
+  border-color: hsl(174, 86%, 45%) !important;
+
+}
+
+input[type="checkbox"]:checked {
+  background-color: hsl(174, 86%, 45%);
+}
+
+.text-1,
+.text-2 {
+  font-size: 13px !important;
+}
+
+
+.discount {
+  font-size: 10px;
+  margin: 0.1rem auto auto 0.7rem;
+  background-color: hsl(14, 92%, 95%);
+  color: hsl(15, 100%, 70%);
+  padding: 0.3rem 0.4rem;
+  border-radius: 5px;
+
+}
+
+hr {
+  width: 30rem;
+  position: relative;
+  right: 3rem;
+}
+
+ul{
+  margin-top: 25px !important;
+  list-style: none;
+  padding-left: 0px !important;
+  display: inline-block;
+  margin-left: -20px !important;
+}
+.offers {
+  display: inline-block;
+  color: hsl(225, 20%, 60%);
+  margin-bottom: 0.3rem;
+  font-size: 14px;
+
+}
+
+
+
+button {
+  border: none;
+  border-radius: 28px !important;
+  color: 	hsl(223, 50%, 87%);
+  font-size: 15px !important;
+  background: #293356;
+  padding: 10px 40px 10px 40px;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  left: 80px;
+  bottom: 25px;
+}
+
+button:hover {
+  color: white;
+  
 }
