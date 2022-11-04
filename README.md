@@ -43,7 +43,7 @@ The screenshot of my project.
 ### Links
 
 - [Solution URL] (https://github.com/LekhaKumar/Interactive-Pricing-Component-.git)
-- [Live Site URL] ()
+- [Live Site URL] (https://lekhakumar.github.io/Interactive-Pricing-Component-/)
 
 ## My process
 
