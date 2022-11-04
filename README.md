@@ -42,8 +42,8 @@ The screenshot of my project.
 
 ### Links
 
-- Tips to create range slider: [How To Create Range Sliders from w3school](https://www.w3schools.com/howto/howto_js_rangeslider.asp)
-- Bootstrap Library to create Toggle switch: [Checks and radios: Bootstrap v5.0](https://getbootstrap.com/docs/5.0/forms/checks-radios/#switches)
+- [Solution URL] (https://github.com/LekhaKumar/Interactive-Pricing-Component-.git)
+- [Live Site URL] ()
 
 ## My process
 
